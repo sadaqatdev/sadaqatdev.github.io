@@ -13,8 +13,7 @@
   --color-accent-light: var(--theme-accent-light);
 }
 
-/* ===== DARK THEME (Default) ===== */
-:root,
+/* ===== DARK THEME ===== */
 [data-theme="dark"] {
   --theme-bg: #030712;
   --theme-fg: #f9fafb;
@@ -86,7 +85,8 @@
   --theme-glow-2: rgba(168, 85, 247, 0.15);
 }
 
-/* ===== OCEAN THEME ===== */
+/* ===== OCEAN THEME (Default) ===== */
+:root,
 [data-theme="ocean"] {
   --theme-bg: #021526;
   --theme-fg: #e0f2fe;
