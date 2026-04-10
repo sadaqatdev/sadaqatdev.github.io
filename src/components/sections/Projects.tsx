@@ -70,6 +70,20 @@ const projects = [
     },
   },
   {
+    title: "Quran Tabsera",
+    description:
+      "A beautifully designed Quran app providing an immersive reading and listening experience. Features include verse-by-verse audio, translations, bookmarks, and daily reminders for spiritual growth.",
+    tech: ["Flutter", "Dart", "Firebase", "Audio Player", "REST APIs", "Offline Support"],
+    impact: "Cross-platform Islamic app",
+    category: "Islamic / Education",
+    links: {
+      appStore:
+        "https://apps.apple.com/us/app/quran-tabsera/id1643491169",
+      playStore:
+        "https://play.google.com/store/apps/details?id=app.tabsera.quran",
+    },
+  },
+  {
     title: "Internet Banking Suite",
     description:
       "Comprehensive internet banking application handling transactions, beneficiary management, account statements, and secure money transfers. Deployed across Pakistan, Syria, and Bahrain.",
