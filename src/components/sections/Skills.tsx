@@ -2,18 +2,18 @@
 
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 import {
-  Code2,
   Cloud,
   Wrench,
   Blocks,
   GitBranch,
   Cpu,
 } from "lucide-react";
+import { FlutterIcon } from "@/components/ui/icons";
 
 const skillCategories = [
   {
     title: "Programming Languages",
-    icon: Code2,
+    icon: FlutterIcon,
     color: "from-blue-500 to-cyan-500",
     skills: [
       "Dart",

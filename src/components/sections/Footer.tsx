@@ -1,6 +1,7 @@
 "use client";
 
-import { Code2, Mail, Heart } from "lucide-react";
+import { Mail, Heart } from "lucide-react";
+import { FlutterIcon } from "@/components/ui/icons";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-              <Code2 className="w-4 h-4 text-white" />
+              <FlutterIcon className="w-4 h-4 text-white" />
             </div>
             <span className="font-semibold text-sm">
               Sadaqat Hussain

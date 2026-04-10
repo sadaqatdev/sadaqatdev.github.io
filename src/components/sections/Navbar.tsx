@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { FlutterIcon } from "@/components/ui/icons";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -43,7 +45,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2 group">
               <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Code2 className="w-5 h-5 text-white" />
+                <FlutterIcon className="w-5 h-5 text-white" />
               </div>
               <span className="font-bold text-lg tracking-tight">
                 Sadaqat<span className="text-indigo-400">.</span>
@@ -60,20 +62,24 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <ThemeToggle />
               <a
                 href="#contact"
-                className="ml-3 px-4 py-2 text-sm font-medium rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
+                className="ml-2 px-4 py-2 text-sm font-medium rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
               >
                 Hire Me
               </a>
             </div>
 
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-gray-400 hover:text-white"
-            >
+            <div className="flex items-center gap-1 md:hidden">
+              <ThemeToggle />
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2 text-gray-400 hover:text-white"
+              >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
+              </button>
+            </div>
           </div>
         </div>
 

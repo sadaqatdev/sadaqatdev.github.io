@@ -3,14 +3,135 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-background: #030712;
-  --color-foreground: #f9fafb;
-  --color-muted: #6b7280;
-  --color-card: #111827;
-  --color-card-hover: #1f2937;
-  --color-border: #1f2937;
-  --color-accent: #6366f1;
-  --color-accent-light: #818cf8;
+  --color-background: var(--theme-bg);
+  --color-foreground: var(--theme-fg);
+  --color-muted: var(--theme-muted);
+  --color-card: var(--theme-card);
+  --color-card-hover: var(--theme-card-hover);
+  --color-border: var(--theme-border);
+  --color-accent: var(--theme-accent);
+  --color-accent-light: var(--theme-accent-light);
+}
+
+/* ===== DARK THEME (Default) ===== */
+:root,
+[data-theme="dark"] {
+  --theme-bg: #030712;
+  --theme-fg: #f9fafb;
+  --theme-muted: #6b7280;
+  --theme-card: #111827;
+  --theme-card-hover: #1f2937;
+  --theme-border: #1f2937;
+  --theme-accent: #6366f1;
+  --theme-accent-light: #818cf8;
+  --theme-glass: rgba(17, 24, 39, 0.6);
+  --theme-glass-strong: rgba(17, 24, 39, 0.8);
+  --theme-glass-border: rgba(99, 102, 241, 0.1);
+  --theme-glass-border-strong: rgba(99, 102, 241, 0.15);
+  --theme-gradient-from: #6366f1;
+  --theme-gradient-via: #8b5cf6;
+  --theme-gradient-to: #a78bfa;
+  --theme-selection: rgba(99, 102, 241, 0.3);
+  --theme-scrollbar-track: #030712;
+  --theme-scrollbar-thumb: #374151;
+  --theme-glow-1: rgba(99, 102, 241, 0.2);
+  --theme-glow-2: rgba(139, 92, 246, 0.15);
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --theme-bg: #f8fafc;
+  --theme-fg: #0f172a;
+  --theme-muted: #64748b;
+  --theme-card: #ffffff;
+  --theme-card-hover: #f1f5f9;
+  --theme-border: #e2e8f0;
+  --theme-accent: #4f46e5;
+  --theme-accent-light: #6366f1;
+  --theme-glass: rgba(255, 255, 255, 0.7);
+  --theme-glass-strong: rgba(255, 255, 255, 0.85);
+  --theme-glass-border: rgba(79, 70, 229, 0.12);
+  --theme-glass-border-strong: rgba(79, 70, 229, 0.2);
+  --theme-gradient-from: #4f46e5;
+  --theme-gradient-via: #7c3aed;
+  --theme-gradient-to: #8b5cf6;
+  --theme-selection: rgba(79, 70, 229, 0.2);
+  --theme-scrollbar-track: #f1f5f9;
+  --theme-scrollbar-thumb: #cbd5e1;
+  --theme-glow-1: rgba(79, 70, 229, 0.08);
+  --theme-glow-2: rgba(124, 58, 237, 0.06);
+}
+
+/* ===== MIDNIGHT THEME ===== */
+[data-theme="midnight"] {
+  --theme-bg: #0c0a1d;
+  --theme-fg: #e8e4f7;
+  --theme-muted: #7c72a8;
+  --theme-card: #16132e;
+  --theme-card-hover: #1e1a3a;
+  --theme-border: #1e1a3a;
+  --theme-accent: #7c3aed;
+  --theme-accent-light: #a78bfa;
+  --theme-glass: rgba(22, 19, 46, 0.6);
+  --theme-glass-strong: rgba(22, 19, 46, 0.85);
+  --theme-glass-border: rgba(124, 58, 237, 0.12);
+  --theme-glass-border-strong: rgba(124, 58, 237, 0.2);
+  --theme-gradient-from: #7c3aed;
+  --theme-gradient-via: #a855f7;
+  --theme-gradient-to: #c084fc;
+  --theme-selection: rgba(124, 58, 237, 0.3);
+  --theme-scrollbar-track: #0c0a1d;
+  --theme-scrollbar-thumb: #2e2854;
+  --theme-glow-1: rgba(124, 58, 237, 0.2);
+  --theme-glow-2: rgba(168, 85, 247, 0.15);
+}
+
+/* ===== OCEAN THEME ===== */
+[data-theme="ocean"] {
+  --theme-bg: #021526;
+  --theme-fg: #e0f2fe;
+  --theme-muted: #67a8c4;
+  --theme-card: #0a2540;
+  --theme-card-hover: #0f3356;
+  --theme-border: #0f3356;
+  --theme-accent: #0891b2;
+  --theme-accent-light: #22d3ee;
+  --theme-glass: rgba(10, 37, 64, 0.6);
+  --theme-glass-strong: rgba(10, 37, 64, 0.85);
+  --theme-glass-border: rgba(8, 145, 178, 0.12);
+  --theme-glass-border-strong: rgba(8, 145, 178, 0.2);
+  --theme-gradient-from: #0891b2;
+  --theme-gradient-via: #06b6d4;
+  --theme-gradient-to: #22d3ee;
+  --theme-selection: rgba(8, 145, 178, 0.3);
+  --theme-scrollbar-track: #021526;
+  --theme-scrollbar-thumb: #164e63;
+  --theme-glow-1: rgba(8, 145, 178, 0.2);
+  --theme-glow-2: rgba(6, 182, 212, 0.15);
+}
+
+/* ===== SUNSET THEME ===== */
+[data-theme="sunset"] {
+  --theme-bg: #1a0a0a;
+  --theme-fg: #fef2f2;
+  --theme-muted: #b87d6e;
+  --theme-card: #2a1215;
+  --theme-card-hover: #3a1a1e;
+  --theme-border: #3a1a1e;
+  --theme-accent: #f97316;
+  --theme-accent-light: #fb923c;
+  --theme-glass: rgba(42, 18, 21, 0.6);
+  --theme-glass-strong: rgba(42, 18, 21, 0.85);
+  --theme-glass-border: rgba(249, 115, 22, 0.12);
+  --theme-glass-border-strong: rgba(249, 115, 22, 0.2);
+  --theme-gradient-from: #ea580c;
+  --theme-gradient-via: #f97316;
+  --theme-gradient-to: #fb923c;
+  --theme-selection: rgba(249, 115, 22, 0.3);
+  --theme-scrollbar-track: #1a0a0a;
+  --theme-scrollbar-thumb: #4a2020;
+  --theme-glow-1: rgba(249, 115, 22, 0.2);
+  --theme-glow-2: rgba(234, 88, 12, 0.15);
 }
 
 * {
@@ -18,13 +139,14 @@
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--theme-bg);
+  color: var(--theme-fg);
   font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: var(--theme-selection);
 }
 
 ::-webkit-scrollbar {
@@ -32,16 +154,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: var(--theme-scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: var(--theme-scrollbar-thumb);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6366f1;
+  background: var(--theme-accent);
 }
 
 @keyframes float {
@@ -63,20 +185,31 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+  background: linear-gradient(135deg, var(--theme-gradient-from) 0%, var(--theme-gradient-via) 50%, var(--theme-gradient-to) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .glass {
-  background: rgba(17, 24, 39, 0.6);
+  background: var(--theme-glass);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(99, 102, 241, 0.1);
+  border: 1px solid var(--theme-glass-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-strong {
-  background: rgba(17, 24, 39, 0.8);
+  background: var(--theme-glass-strong);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(99, 102, 241, 0.15);
+  border: 1px solid var(--theme-glass-border-strong);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Light theme specific overrides */
+[data-theme="light"] .glass {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .glass-strong {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }

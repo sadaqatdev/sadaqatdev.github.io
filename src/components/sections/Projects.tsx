@@ -1,7 +1,8 @@
 "use client";
 
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/motion";
-import { ExternalLink, Smartphone, Star, Download } from "lucide-react";
+import { ExternalLink, Star, Download } from "lucide-react";
+import { PlayStoreIcon, AppStoreIcon } from "@/components/ui/icons";
 
 const projects = [
   {
@@ -149,9 +150,9 @@ export default function Projects() {
                         href={project.links.playStore}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-indigo-400 transition-colors"
+                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
                       >
-                        <Smartphone className="w-4 h-4" />
+                        <PlayStoreIcon className="w-4 h-4" />
                         Play Store
                         <ExternalLink className="w-3 h-3" />
                       </a>
@@ -161,9 +162,9 @@ export default function Projects() {
                         href={project.links.appStore}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-indigo-400 transition-colors"
+                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-blue-400 transition-colors"
                       >
-                        <Smartphone className="w-4 h-4" />
+                        <AppStoreIcon className="w-4 h-4" />
                         App Store
                         <ExternalLink className="w-3 h-3" />
                       </a>
