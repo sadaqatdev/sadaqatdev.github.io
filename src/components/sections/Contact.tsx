@@ -10,6 +10,7 @@ import {
   CheckCircle,
   Copy,
   Check,
+  ExternalLink,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "@/components/ui/icons";
 
@@ -20,6 +21,7 @@ interface ContactItem {
   value: string;
   copyValue: string;
   href: string;
+  openInNewTab?: boolean;
 }
 
 const contactInfo: ContactItem[] = [
@@ -51,6 +53,7 @@ const contactInfo: ContactItem[] = [
     value: "github.com/sadaqatdev",
     copyValue: "https://github.com/sadaqatdev",
     href: "https://github.com/sadaqatdev",
+    openInNewTab: true,
   },
   {
     icon: LinkedinIcon,
@@ -58,6 +61,7 @@ const contactInfo: ContactItem[] = [
     value: "LinkedIn Profile",
     copyValue: "https://www.linkedin.com/in/sadaqat-h-264b3018a/",
     href: "https://www.linkedin.com/in/sadaqat-h-264b3018a/",
+    openInNewTab: true,
   },
   {
     icon: MapPin,
@@ -73,10 +77,14 @@ function ContactInfoItem({ item, index }: { item: ContactItem; index: number }) 
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigator.clipboard.writeText(item.copyValue).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
+    if (item.openInNewTab) {
+      window.open(item.href, "_blank", "noopener,noreferrer");
+    } else {
+      navigator.clipboard.writeText(item.copyValue).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      });
+    }
   };
 
   return (
@@ -100,7 +108,9 @@ function ContactInfoItem({ item, index }: { item: ContactItem; index: number }) 
         </div>
       </div>
       <div className="shrink-0">
-        {copied ? (
+        {item.openInNewTab ? (
+          <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-gray-300 transition-colors" />
+        ) : copied ? (
           <Check className="w-4 h-4 text-emerald-400" />
         ) : (
           <Copy className="w-4 h-4 text-gray-600 group-hover:text-gray-300 transition-colors" />
