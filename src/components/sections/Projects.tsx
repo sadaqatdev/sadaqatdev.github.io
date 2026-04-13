@@ -104,7 +104,7 @@ export default function Projects() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Featured <span className="gradient-text">Projects</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               A selection of apps that have reached millions of users and generated
               significant revenue
             </p>
@@ -133,7 +133,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
 
-                  <p className="text-sm text-gray-400 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-300 leading-relaxed mb-4">
                     {project.description}
                   </p>
 
@@ -148,7 +148,7 @@ export default function Projects() {
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-2 py-0.5 text-[11px] font-medium rounded-md bg-white/5 text-gray-400 border border-white/5"
+                        className="px-2 py-0.5 text-[11px] font-medium rounded-md bg-white/5 text-gray-300 border border-white/5"
                       >
                         {t}
                       </span>
@@ -164,7 +164,7 @@ export default function Projects() {
                         href={project.links.playStore}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
+                        className="flex items-center gap-1.5 text-sm text-gray-300 hover:text-emerald-400 transition-colors"
                       >
                         <PlayStoreIcon className="w-4 h-4" />
                         Play Store
@@ -176,7 +176,7 @@ export default function Projects() {
                         href={project.links.appStore}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                        className="flex items-center gap-1.5 text-sm text-gray-300 hover:text-blue-400 transition-colors"
                       >
                         <AppStoreIcon className="w-4 h-4" />
                         App Store

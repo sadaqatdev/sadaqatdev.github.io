@@ -49,7 +49,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-4 font-light"
+          className="text-xl sm:text-2xl md:text-3xl text-gray-300 max-w-3xl mx-auto mb-4 font-light"
         >
           Senior Mobile Developer &bull; Flutter Specialist
         </motion.p>
@@ -58,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Building scalable, AI-powered mobile applications with{" "}
           <span className="text-indigo-400 font-medium">5+ million downloads</span>{" "}
@@ -106,7 +106,7 @@ export default function Hero() {
               <div className="text-2xl sm:text-3xl font-bold gradient-text">
                 {stat.value}
               </div>
-              <div className="text-xs sm:text-sm text-gray-500 mt-1">
+              <div className="text-xs sm:text-sm text-gray-400 mt-1">
                 {stat.label}
               </div>
             </div>

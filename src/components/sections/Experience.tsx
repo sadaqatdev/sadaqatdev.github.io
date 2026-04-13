@@ -86,7 +86,7 @@ export default function Experience() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Work <span className="gradient-text">Experience</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               A track record of delivering impactful mobile solutions across global companies
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full mt-4" />
@@ -116,7 +116,7 @@ export default function Experience() {
                         </div>
                       </div>
                       <div className="flex flex-col sm:items-end gap-1 text-sm shrink-0">
-                        <span className="flex items-center gap-1.5 text-gray-400">
+                        <span className="flex items-center gap-1.5 text-gray-300">
                           <Calendar className="w-3.5 h-3.5" />
                           {exp.period}
                         </span>
@@ -130,7 +130,7 @@ export default function Experience() {
                       {exp.highlights.map((item, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-2 text-sm text-gray-400"
+                          className="flex items-start gap-2 text-sm text-gray-300"
                         >
                           <span className="w-1.5 h-1.5 rounded-full bg-indigo-500/60 mt-1.5 shrink-0" />
                           {item}

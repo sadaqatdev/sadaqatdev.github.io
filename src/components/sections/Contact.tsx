@@ -103,7 +103,7 @@ function ContactInfoItem({ item, index }: { item: ContactItem; index: number }) 
         {copied ? (
           <Check className="w-4 h-4 text-emerald-400" />
         ) : (
-          <Copy className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
+          <Copy className="w-4 h-4 text-gray-600 group-hover:text-gray-300 transition-colors" />
         )}
       </div>
     </button>
@@ -140,7 +140,7 @@ export default function Contact() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Let&apos;s <span className="gradient-text">Connect</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Let&apos;s build something amazing together. Whether you have a project
               in mind or just want to chat, I&apos;d love to hear from you.
             </p>
@@ -167,7 +167,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="glass rounded-xl p-6 space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1.5">
+                  <label className="block text-sm text-gray-300 mb-1.5">
                     Name
                   </label>
                   <input
@@ -182,7 +182,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1.5">
+                  <label className="block text-sm text-gray-300 mb-1.5">
                     Email
                   </label>
                   <input
@@ -198,7 +198,7 @@ export default function Contact() {
                 </div>
               </div>
               <div>
-                <label className="block text-sm text-gray-400 mb-1.5">
+                <label className="block text-sm text-gray-300 mb-1.5">
                   Subject
                 </label>
                 <input
@@ -213,7 +213,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-400 mb-1.5">
+                <label className="block text-sm text-gray-300 mb-1.5">
                   Message
                 </label>
                 <textarea

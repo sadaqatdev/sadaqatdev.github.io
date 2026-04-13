@@ -114,7 +114,7 @@ export default function Skills() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Technical <span className="gradient-text">Skills</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               A comprehensive toolkit refined over 5+ years of building
               production-grade mobile applications
             </p>

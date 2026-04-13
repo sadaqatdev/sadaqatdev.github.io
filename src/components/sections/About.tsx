@@ -65,16 +65,16 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
           <FadeIn direction="left">
             <div className="space-y-5">
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-200 leading-relaxed text-lg">
                 Results-driven Flutter developer with{" "}
                 <span className="text-indigo-400 font-semibold">5+ years</span> of
                 experience designing and developing high-performance, cross-platform
                 mobile applications.
               </p>
-              <p className="text-gray-400 leading-relaxed">
-                I specialize in <strong className="text-gray-200">fintech solutions</strong>,{" "}
-                <strong className="text-gray-200">Web3 apps</strong>, and{" "}
-                <strong className="text-gray-200">AI-powered</strong> mobile applications,
+              <p className="text-gray-300 leading-relaxed text-base">
+                I specialize in <strong className="text-gray-100">fintech solutions</strong>,{" "}
+                <strong className="text-gray-100">Web3 apps</strong>, and{" "}
+                <strong className="text-gray-100">AI-powered</strong> mobile applications,
                 integrating secure transactions, real-time analytics, and intelligent
                 automation. My apps have achieved{" "}
                 <span className="text-indigo-400 font-semibold">5 million downloads</span>{" "}
@@ -82,7 +82,7 @@ export default function About() {
                 that have generated{" "}
                 <span className="text-indigo-400 font-semibold">millions in revenue</span>.
               </p>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed text-base">
                 Passionate about building scalable, user-centric applications with a
                 strong focus on security, API integration, and performance
                 optimization. I strive for excellence and innovation, ensuring every
@@ -116,7 +116,7 @@ export default function About() {
                 >
                   <area.icon className="w-8 h-8 text-indigo-400 mb-3 group-hover:scale-110 transition-transform" />
                   <h3 className="font-semibold mb-1.5">{area.title}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">
+                  <p className="text-sm text-gray-300 leading-relaxed">
                     {area.description}
                   </p>
                 </div>

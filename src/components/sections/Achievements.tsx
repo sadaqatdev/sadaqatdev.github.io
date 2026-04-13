@@ -144,7 +144,7 @@ export default function Achievements() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Achievements & <span className="gradient-text">Impact</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Measurable results that demonstrate real-world impact
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full mt-4" />
@@ -168,7 +168,7 @@ export default function Achievements() {
                   />
                 </div>
                 <div className="font-semibold text-sm mb-1">{stat.label}</div>
-                <div className="text-xs text-gray-500">{stat.description}</div>
+                <div className="text-xs text-gray-400">{stat.description}</div>
               </div>
             </StaggerItem>
           ))}
@@ -191,7 +191,7 @@ export default function Achievements() {
                   </span>
                 </div>
                 <h4 className="font-semibold text-sm mb-1.5">{award.title}</h4>
-                <p className="text-xs text-gray-500 leading-relaxed">
+                <p className="text-xs text-gray-400 leading-relaxed">
                   {award.description}
                 </p>
               </div>
