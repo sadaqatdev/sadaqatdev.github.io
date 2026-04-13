@@ -104,8 +104,8 @@ const jsonLd = {
     addressCountry: "PK",
   },
   sameAs: [
-    "https://github.com/sadaqathunzai",
-    "https://linkedin.com/in/sadaqathunzai",
+    "https://github.com/sadaqatdev",
+    "https://www.linkedin.com/in/sadaqat-h-264b3018a/",
   ],
   alumniOf: {
     "@type": "CollegeOrUniversity",

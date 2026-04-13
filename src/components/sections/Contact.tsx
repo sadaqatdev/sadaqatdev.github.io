@@ -48,16 +48,16 @@ const contactInfo: ContactItem[] = [
   {
     icon: GithubIcon,
     label: "GitHub",
-    value: "github.com/sadaqathunzai",
-    copyValue: "https://github.com/sadaqathunzai",
-    href: "https://github.com/sadaqathunzai",
+    value: "github.com/sadaqatdev",
+    copyValue: "https://github.com/sadaqatdev",
+    href: "https://github.com/sadaqatdev",
   },
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
     value: "LinkedIn Profile",
-    copyValue: "https://linkedin.com/in/sadaqathunzai",
-    href: "https://linkedin.com/in/sadaqathunzai",
+    copyValue: "https://www.linkedin.com/in/sadaqat-h-264b3018a/",
+    href: "https://www.linkedin.com/in/sadaqat-h-264b3018a/",
   },
   {
     icon: MapPin,
